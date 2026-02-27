@@ -12,7 +12,8 @@ import {
     Clock,
     Award,
     Briefcase,
-    MessageSquare
+    MessageSquare,
+    Inbox
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { createBrowserClient } from '@supabase/ssr';
@@ -32,6 +33,7 @@ export default function AdminLayout({
     const sidebarItems = [
         { icon: LayoutDashboard, label: 'Vue Globale', href: '/dashboard/admin' },
         { icon: MessageSquare, label: 'Messagerie', href: '/dashboard/admin/messages', badge: true },
+        { icon: Inbox, label: 'Demandes', href: '/dashboard/admin/inscriptions' },
         { icon: Briefcase, label: 'Portfolio', href: '/dashboard/admin/portfolio' },
         { icon: Briefcase, label: 'Agence / Missions', href: '/dashboard/admin/agency' },
         { icon: BookOpen, label: 'Gestion des Cours', href: '/dashboard/admin/courses' },

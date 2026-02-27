@@ -59,6 +59,9 @@ export async function getAdminDashboardStats() {
         // 3. User Counts (Optional but nice)
         const { count: userCount } = await supabase.from('profiles').select('*', { count: 'exact', head: true });
 
+        // 4. Inscriptions Count
+        const { count: inscriptionsCount } = await supabase.from('inscriptions').select('*', { count: 'exact', head: true });
+
         return {
             success: true,
             data: {
@@ -66,6 +69,7 @@ export async function getAdminDashboardStats() {
                 inProgressProjects: progressCount || 0,
                 totalRevenue: totalRevenue,
                 totalUsers: userCount || 0,
+                totalInscriptions: inscriptionsCount || 0,
                 recentActivities: messages?.map((msg: any) => {
                     const sender = Array.isArray(msg.sender) ? msg.sender[0] : msg.sender;
                     const project = Array.isArray(msg.project) ? msg.project[0] : msg.project;

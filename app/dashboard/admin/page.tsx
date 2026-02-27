@@ -27,7 +27,7 @@ export default async function AdminDashboard() {
             </header>
 
             {/* Stats Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
                 <Card>
                     <CardContent className="p-6 flex items-center gap-4">
                         <div className="p-3 rounded-xl bg-blue-50">
@@ -72,6 +72,18 @@ export default async function AdminDashboard() {
                         <div>
                             <div className="text-sm font-medium text-slate-500">Chiffre d'Affaires</div>
                             <div className="text-2xl font-bold text-slate-900">{formatCurrency(revenue)}</div>
+                        </div>
+                    </CardContent>
+                </Card>
+
+                <Card className="border-indigo-200 bg-indigo-50/30">
+                    <CardContent className="p-6 flex items-center gap-4">
+                        <div className="p-3 rounded-xl bg-white shadow-sm">
+                            <MessageSquare className="w-6 h-6 text-indigo-600" />
+                        </div>
+                        <div>
+                            <div className="text-sm font-medium text-slate-500">Demandes (Contact)</div>
+                            <div className="text-2xl font-bold text-indigo-900">{stats?.totalInscriptions || 0}</div>
                         </div>
                     </CardContent>
                 </Card>
