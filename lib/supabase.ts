@@ -1,16 +1,12 @@
 import { createBrowserClient } from '@supabase/ssr';
 
-// On récupère les variables
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
 
-// AJOUTE CE CHECK DE SÉCURITÉ POUR LE BUILD
-if (!supabaseUrl || !supabaseKey) {
-  console.error("VARS MISSING IN VERCEL. Using placeholders to bypass build error.");
+if (!supabaseUrl || !supabaseUrl.startsWith('http') || !supabaseKey) {
+    console.error('Supabase Credentials Missing or Invalid. Please update .env.local');
+    throw new Error('Supabase Configuration Error: Invalid URL or Key in .env.local');
 }
 
-// On utilise les vraies variables, ou des chaînes vides si elles sont absentes
-export const supabase = createBrowserClient(
-    supabaseUrl || 'https://placeholder.supabase.co', 
-    supabaseKey || 'placeholder'
-);
+export const supabase = createBrowserClient(supabaseUrl, supabaseKey);
+
