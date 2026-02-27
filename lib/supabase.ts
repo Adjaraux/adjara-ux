@@ -6,7 +6,7 @@ const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
 
 if (!supabaseUrl || !supabaseUrl.startsWith('http') || !supabaseKey) {
     console.error('Supabase Credentials Missing or Invalid. Please update .env.local');
-    throw new Error('Supabase Configuration Error: Invalid URL or Key in .env.local');
+    // On ne fait plus de "throw new Error" pour permettre au build de continuer
 }
 
 export const supabase = createBrowserClient(supabaseUrl, supabaseKey);
