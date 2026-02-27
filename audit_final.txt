@@ -1,0 +1,27 @@
+﻿[dotenv@17.2.4] injecting env (3) from .env.local -- tip: ÔÜÖ´©Å  write to custom object with { processEnv: myObject }
+­ƒöì STARTING DATA SYNC AUDIT ­ƒöì
+
+--- 1. CERTIFICATES AUDIT ---
+Found 1 certificates in DB.
+ - CertID: 6a209981-a913-4331-be0a-bbe7a3b583ca, UserID: d0ab901b-bbd2-4417-8564-69b89c4885d9
+
+Checking Profile for User d0ab901b-bbd2-4417-8564-69b89c4885d9...
+Profile Data: Found
+ - Role: eleve, Email: takeawalkinfo@gmail.com
+
+--- 2. COLUMN EXISTENCE CHECK ---
+Attempting to select 'specialty, phone' from profiles...
+Ô£à Columns exist (or query succeeded). Data: [
+  {
+    id: 'f655758c-5029-46e2-ab61-59f2882f66b2',
+    specialty: 'none',
+    phone: null
+  }
+]
+
+--- 3. AGENCY CLIENTS PHONE CHECK ---
+Agency Clients with NON-NULL phone: 2
+Sample: {
+  id: 'e9f36990-523a-4aa1-a8c5-695f20cbea4a',
+  phone: '+225 07 00 00 00 00'
+}

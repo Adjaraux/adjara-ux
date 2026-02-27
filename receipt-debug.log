@@ -1,0 +1,106 @@
+[TEST][2026-02-20T22:32:44.563Z] Test generation started
+[TEST][2026-02-20T22:32:44.568Z] FATAL ERROR: Minified React error #31; visit https://reactjs.org/docs/error-decoder.html?invariant=31&args[]=object%20with%20keys%20%7B%24%24typeof%2C%20type%2C%20key%2C%20props%2C%20_owner%2C%20_store%7D&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+Stack: Error: Minified React error #31; visit https://reactjs.org/docs/error-decoder.html?invariant=31&args[]=object%20with%20keys%20%7B%24%24typeof%2C%20type%2C%20key%2C%20props%2C%20_owner%2C%20_store%7D&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at Wt (file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/reconciler/lib/reconciler-23.js:10:13873)
+    at file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/reconciler/lib/reconciler-23.js:10:18667
+    at Bn (file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/reconciler/lib/reconciler-23.js:10:25975)
+    at wr (file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/reconciler/lib/reconciler-23.js:10:57987)
+    at wl (file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/reconciler/lib/reconciler-23.js:10:47104)
+    at Sl (file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/reconciler/lib/reconciler-23.js:10:47029)
+    at bl (file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/reconciler/lib/reconciler-23.js:10:44404)
+    at file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/reconciler/lib/reconciler-23.js:10:6243
+    at process.env.NODE_ENV.exports.unstable_runWithPriority (D:\antygravity\mon-entreprise\node_modules\@react-pdf\reconciler\node_modules\scheduler\cjs\scheduler.development.js:288:16)
+    at Ge (file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/reconciler/lib/reconciler-23.js:10:5952)
+    at Ze (file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/reconciler/lib/reconciler-23.js:10:6188)
+    at Xe (file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/reconciler/lib/reconciler-23.js:10:6123)
+    at dl (file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/reconciler/lib/reconciler-23.js:10:41177)
+    at Object.updateContainer (file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/reconciler/lib/reconciler-23.js:10:64316)
+    at updateContainer (file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/renderer/lib/react-pdf.js:132:14)
+    at pdf (file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/renderer/lib/react-pdf.js:134:21)
+    at renderToStream (file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/renderer/lib/react-pdf.js:289:20)
+    at GET (webpack-internal:///(rsc)/./app/api/receipts/test/route.tsx:43:97)
+    at AsyncLocalStorage.run (node:internal/async_local_storage/async_context_frame:59:14)
+    at AppRouteRouteModule.do (D:\antygravity\mon-entreprise\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:10:32883)
+    at D:\antygravity\mon-entreprise\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:10:42144
+    at D:\antygravity\mon-entreprise\node_modules\next\dist\server\lib\trace\tracer.js:169:36
+    at NoopContextManager.with (D:\antygravity\mon-entreprise\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (D:\antygravity\mon-entreprise\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NoopTracer.startActiveSpan (D:\antygravity\mon-entreprise\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18093)
+    at ProxyTracer.startActiveSpan (D:\antygravity\mon-entreprise\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18854)
+    at D:\antygravity\mon-entreprise\node_modules\next\dist\server\lib\trace\tracer.js:151:103
+    at NoopContextManager.with (D:\antygravity\mon-entreprise\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (D:\antygravity\mon-entreprise\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NextTracerImpl.trace (D:\antygravity\mon-entreprise\node_modules\next\dist\server\lib\trace\tracer.js:151:28)
+    at D:\antygravity\mon-entreprise\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:10:42005
+    at AsyncLocalStorage.run (node:internal/async_local_storage/async_context_frame:63:14)
+    at D:\antygravity\mon-entreprise\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:10:39817
+    at AsyncLocalStorage.run (node:internal/async_local_storage/async_context_frame:63:14)
+    at D:\antygravity\mon-entreprise\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:10:39774
+    at AsyncLocalStorage.run (node:internal/async_local_storage/async_context_frame:63:14)
+    at AppRouteRouteModule.handle (D:\antygravity\mon-entreprise\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:10:39728)
+    at doRender (D:\antygravity\mon-entreprise\node_modules\next\dist\server\base-server.js:1452:60)
+    at responseGenerator (D:\antygravity\mon-entreprise\node_modules\next\dist\server\base-server.js:1813:34)
+    at ResponseCache.get (D:\antygravity\mon-entreprise\node_modules\next\dist\server\response-cache\index.js:49:20)
+    at DevServer.renderToResponseWithComponentsImpl (D:\antygravity\mon-entreprise\node_modules\next\dist\server\base-server.js:1823:53)
+    at D:\antygravity\mon-entreprise\node_modules\next\dist\server\base-server.js:1067:121
+    at NextTracerImpl.trace (D:\antygravity\mon-entreprise\node_modules\next\dist\server\lib\trace\tracer.js:134:20)
+    at DevServer.renderToResponseWithComponents (D:\antygravity\mon-entreprise\node_modules\next\dist\server\base-server.js:1067:41)
+    at DevServer.renderPageComponent (D:\antygravity\mon-entreprise\node_modules\next\dist\server\base-server.js:2250:35)
+    at async DevServer.renderToResponseImpl (D:\antygravity\mon-entreprise\node_modules\next\dist\server\base-server.js:2288:32)
+    at async DevServer.pipeImpl (D:\antygravity\mon-entreprise\node_modules\next\dist\server\base-server.js:959:25)
+    at async NextNodeServer.handleCatchallRenderRequest (D:\antygravity\mon-entreprise\node_modules\next\dist\server\next-server.js:281:17)
+    at async DevServer.handleRequestImpl (D:\antygravity\mon-entreprise\node_modules\next\dist\server\base-server.js:853:17)
+    at async D:\antygravity\mon-entreprise\node_modules\next\dist\server\dev\next-dev-server.js:371:20
+[TEST][2026-02-20T22:32:45.047Z] Test generation started
+[TEST][2026-02-20T22:32:45.049Z] FATAL ERROR: Minified React error #31; visit https://reactjs.org/docs/error-decoder.html?invariant=31&args[]=object%20with%20keys%20%7B%24%24typeof%2C%20type%2C%20key%2C%20props%2C%20_owner%2C%20_store%7D&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+Stack: Error: Minified React error #31; visit https://reactjs.org/docs/error-decoder.html?invariant=31&args[]=object%20with%20keys%20%7B%24%24typeof%2C%20type%2C%20key%2C%20props%2C%20_owner%2C%20_store%7D&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at Wt (file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/reconciler/lib/reconciler-23.js:10:13873)
+    at file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/reconciler/lib/reconciler-23.js:10:18667
+    at Bn (file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/reconciler/lib/reconciler-23.js:10:25975)
+    at wr (file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/reconciler/lib/reconciler-23.js:10:57987)
+    at wl (file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/reconciler/lib/reconciler-23.js:10:47104)
+    at Sl (file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/reconciler/lib/reconciler-23.js:10:47029)
+    at bl (file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/reconciler/lib/reconciler-23.js:10:44404)
+    at file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/reconciler/lib/reconciler-23.js:10:6243
+    at process.env.NODE_ENV.exports.unstable_runWithPriority (D:\antygravity\mon-entreprise\node_modules\@react-pdf\reconciler\node_modules\scheduler\cjs\scheduler.development.js:288:16)
+    at Ge (file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/reconciler/lib/reconciler-23.js:10:5952)
+    at Ze (file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/reconciler/lib/reconciler-23.js:10:6188)
+    at Xe (file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/reconciler/lib/reconciler-23.js:10:6123)
+    at dl (file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/reconciler/lib/reconciler-23.js:10:41177)
+    at Object.updateContainer (file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/reconciler/lib/reconciler-23.js:10:64316)
+    at updateContainer (file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/renderer/lib/react-pdf.js:132:14)
+    at pdf (file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/renderer/lib/react-pdf.js:134:21)
+    at renderToStream (file:///D:/antygravity/mon-entreprise/node_modules/@react-pdf/renderer/lib/react-pdf.js:289:20)
+    at GET (webpack-internal:///(rsc)/./app/api/receipts/test/route.tsx:43:97)
+    at AsyncLocalStorage.run (node:internal/async_local_storage/async_context_frame:59:14)
+    at AppRouteRouteModule.do (D:\antygravity\mon-entreprise\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:10:32883)
+    at D:\antygravity\mon-entreprise\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:10:42144
+    at D:\antygravity\mon-entreprise\node_modules\next\dist\server\lib\trace\tracer.js:169:36
+    at NoopContextManager.with (D:\antygravity\mon-entreprise\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (D:\antygravity\mon-entreprise\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NoopTracer.startActiveSpan (D:\antygravity\mon-entreprise\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18093)
+    at ProxyTracer.startActiveSpan (D:\antygravity\mon-entreprise\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18854)
+    at D:\antygravity\mon-entreprise\node_modules\next\dist\server\lib\trace\tracer.js:151:103
+    at NoopContextManager.with (D:\antygravity\mon-entreprise\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (D:\antygravity\mon-entreprise\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NextTracerImpl.trace (D:\antygravity\mon-entreprise\node_modules\next\dist\server\lib\trace\tracer.js:151:28)
+    at D:\antygravity\mon-entreprise\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:10:42005
+    at AsyncLocalStorage.run (node:internal/async_local_storage/async_context_frame:63:14)
+    at D:\antygravity\mon-entreprise\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:10:39817
+    at AsyncLocalStorage.run (node:internal/async_local_storage/async_context_frame:63:14)
+    at D:\antygravity\mon-entreprise\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:10:39774
+    at AsyncLocalStorage.run (node:internal/async_local_storage/async_context_frame:63:14)
+    at AppRouteRouteModule.handle (D:\antygravity\mon-entreprise\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:10:39728)
+    at doRender (D:\antygravity\mon-entreprise\node_modules\next\dist\server\base-server.js:1452:60)
+    at responseGenerator (D:\antygravity\mon-entreprise\node_modules\next\dist\server\base-server.js:1813:34)
+    at ResponseCache.get (D:\antygravity\mon-entreprise\node_modules\next\dist\server\response-cache\index.js:49:20)
+    at DevServer.renderToResponseWithComponentsImpl (D:\antygravity\mon-entreprise\node_modules\next\dist\server\base-server.js:1823:53)
+    at D:\antygravity\mon-entreprise\node_modules\next\dist\server\base-server.js:1067:121
+    at NextTracerImpl.trace (D:\antygravity\mon-entreprise\node_modules\next\dist\server\lib\trace\tracer.js:134:20)
+    at DevServer.renderToResponseWithComponents (D:\antygravity\mon-entreprise\node_modules\next\dist\server\base-server.js:1067:41)
+    at DevServer.renderPageComponent (D:\antygravity\mon-entreprise\node_modules\next\dist\server\base-server.js:2250:35)
+    at async DevServer.renderToResponseImpl (D:\antygravity\mon-entreprise\node_modules\next\dist\server\base-server.js:2288:32)
+    at async DevServer.pipeImpl (D:\antygravity\mon-entreprise\node_modules\next\dist\server\base-server.js:959:25)
+    at async NextNodeServer.handleCatchallRenderRequest (D:\antygravity\mon-entreprise\node_modules\next\dist\server\next-server.js:281:17)
+    at async DevServer.handleRequestImpl (D:\antygravity\mon-entreprise\node_modules\next\dist\server\base-server.js:853:17)
+    at async D:\antygravity\mon-entreprise\node_modules\next\dist\server\dev\next-dev-server.js:371:20

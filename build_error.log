@@ -1,0 +1,82 @@
+﻿   Ôû▓ Next.js 15.1.0
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+ Ô£ô Compiled successfully
+   Skipping validation of types
+   Skipping linting
+   Collecting page data ...
+   Generating static pages (0/45) ...
+   Generating static pages (11/45) 
+   Generating static pages (22/45) 
+   Generating static pages (33/45) 
+ Ô£ô Generating static pages (45/45)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size     First Load JS
+Ôöî Ôùï /                                       3.64 kB         246 kB
+Ôö£ Ôùï /_not-found                             990 B           107 kB
+Ôö£ Ôùï /a-propos                               202 B           201 kB
+Ôö£ ãÆ /academie                               198 B           110 kB
+Ôö£ ãÆ /api/certifications/download            173 B           106 kB
+Ôö£ ãÆ /api/contact                            173 B           106 kB
+Ôö£ ãÆ /api/debug-audit                        173 B           106 kB
+Ôö£ ãÆ /api/receipts/[id]                      173 B           106 kB
+Ôö£ ãÆ /api/receipts/test                      173 B           106 kB
+Ôö£ ãÆ /api/webhooks/cinetpay                  173 B           106 kB
+Ôö£ ãÆ /api/webhooks/moneroo                   173 B           106 kB
+Ôö£ ãÆ /api/webhooks/stripe                    173 B           106 kB
+Ôö£ Ôùï /auth                                   188 B           174 kB
+Ôö£ ãÆ /auth/callback                          173 B           106 kB
+Ôö£ Ôùï /case-studies                           198 B           110 kB
+Ôö£ ãÆ /case-studies/[slug]                    198 B           110 kB
+Ôö£ Ôùï /conditions-generales                   1.09 kB         145 kB
+Ôö£ Ôùï /contact                                202 B           201 kB
+Ôö£ ãÆ /dashboard/admin                        3.02 kB         116 kB
+Ôö£ Ôùï /dashboard/admin/agency                 13.4 kB         172 kB
+Ôö£ Ôùï /dashboard/admin/attempts               8.28 kB         126 kB
+Ôö£ Ôùï /dashboard/admin/certifications         5.1 kB          127 kB
+Ôö£ ãÆ /dashboard/admin/courses                4.53 kB         176 kB
+Ôö£ ãÆ /dashboard/admin/courses/[id]           168 B           280 kB
+Ôö£ Ôùï /dashboard/admin/courses/new            166 B           280 kB
+Ôö£ Ôùï /dashboard/admin/messages               7.82 kB         235 kB
+Ôö£ Ôùï /dashboard/admin/portfolio              47.5 kB         305 kB
+Ôö£ Ôùï /dashboard/admin/settings               9.64 kB         191 kB
+Ôö£ Ôùï /dashboard/admin/settings/certificates  1.71 kB         114 kB
+Ôö£ Ôùï /dashboard/admin/users                  9.73 kB         229 kB
+Ôö£ Ôùï /dashboard/client                       5 kB            176 kB
+Ôö£ Ôùï /dashboard/client/messages              1.67 kB         114 kB
+Ôö£ Ôùï /dashboard/client/profile               7.67 kB         223 kB
+Ôö£ ãÆ /dashboard/client/projects              198 B           110 kB
+Ôö£ ãÆ /dashboard/client/projects/[id]         11.7 kB         218 kB
+Ôö£ Ôùï /dashboard/client/projects/new          12.2 kB         262 kB
+Ôö£ Ôùï /dashboard/client/settings              8.27 kB         189 kB
+Ôö£ Ôùï /dashboard/eleve                        173 B           106 kB
+Ôö£ ãÆ /dashboard/eleve/cours/[slug]           13.4 kB         225 kB
+Ôö£ Ôùï /dashboard/eleve/diplomas               6.1 kB          185 kB
+Ôö£ ãÆ /dashboard/eleve/learning               5.01 kB         128 kB
+Ôö£ ãÆ /dashboard/eleve/missions               198 B           110 kB
+Ôö£ ãÆ /dashboard/eleve/missions/[id]          7.49 kB         199 kB
+Ôö£ ãÆ /dashboard/eleve/profile                6.78 kB         222 kB
+Ôö£ Ôùï /dashboard/eleve/purchases              5.01 kB         182 kB
+Ôö£ Ôùï /dashboard/eleve/selection-specialite   6.43 kB         176 kB
+Ôö£ Ôùï /espace-client                          173 B           106 kB
+Ôö£ Ôùï /onboarding                             198 B           110 kB
+Ôö£ Ôùï /payment/success                        5 kB            160 kB
+Ôö£ Ôùï /politique-confidentialite              857 B           145 kB
+Ôö£ ãÆ /prestations                            198 B           110 kB
+Ôö£ ãÆ /pricing                                8.6 kB          134 kB
+Ôö£ ãÆ /realisations                           6.44 kB         222 kB
+Ôöö Ôùï /welcome                                2.39 kB         163 kB
++ First Load JS shared by all               106 kB
+  Ôö£ chunks/1517-a4381db2b5d6d9f5.js         50.7 kB
+  Ôö£ chunks/4bd1b696-9c69237d57f84deb.js     53 kB
+  Ôöö other shared chunks (total)             2.25 kB
+
+
+ãÆ Middleware                                78.8 kB
+
+Ôùï  (Static)   prerendered as static content
+ãÆ  (Dynamic)  server-rendered on demand
+

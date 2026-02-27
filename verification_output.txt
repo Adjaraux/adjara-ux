@@ -1,0 +1,20 @@
+﻿[dotenv@17.2.4] injecting env (3) from .env.local -- tip: Ô£à audit secrets and track compliance: https://dotenvx.com/ops
+­ƒÜÇ Starting Baseline Feature Verification...
+
+Checking Moneroo Integration...
+Ô£à Moneroo Transaction Table exists and is queryable.
+
+Checking Project Tracking Flow...
+Ô£à Projects found: 1
+   - [completed] pollo
+
+Checking LMS / Academy Features...
+Ô£à Courses found: 2
+Ô£à Students (eleve) found: 2
+
+Checking Site Configurations...
+Ô£à Configs found: 2
+   - youtube_id_academy: https://youtu.be/5pHFxR1PhMg?list=PLTpORSS-e5njLiMXOjXw7lYlVxUPE0V_x
+   - youtube_id_prestations: https://youtu.be/xRLxeyMYy9E
+
+--- Verification Finished ---
