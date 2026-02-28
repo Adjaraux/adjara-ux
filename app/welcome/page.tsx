@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { createBrowserClient } from '@supabase/ssr';
 import { useRouter } from 'next/navigation';
-import { GraduationCap, Briefcase, ChevronRight, Loader2 } from 'lucide-react';
+import { GraduationCap, Briefcase, ChevronRight, Loader2, AlertCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function WelcomePage() {
@@ -132,6 +132,12 @@ export default function WelcomePage() {
                                 <p className="text-slate-600 leading-relaxed">
                                     Je suis une entreprise ou un particulier et je souhaite commander des services (gravure, design, dev).
                                 </p>
+                                <div className="mt-2 p-3 bg-amber-50 border border-amber-200 rounded-xl flex items-start gap-3 animate-in fade-in slide-in-from-top-2 duration-500 delay-200">
+                                    <AlertCircle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
+                                    <p className="text-[12px] leading-tight text-amber-700 font-medium">
+                                        <span className="font-bold">Attention :</span> Ce choix est réservé uniquement aux clients. Si vous souhaitez apprendre, sélectionnez la catégorie Académie.
+                                    </p>
+                                </div>
                             </div>
                             <div className="pt-4 flex items-center text-emerald-600 font-semibold group-hover:translate-x-2 transition-transform">
                                 {isLoading === 'client' ? (
