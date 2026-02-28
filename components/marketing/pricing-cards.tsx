@@ -25,6 +25,7 @@ import { PaymentMethodSelector } from '@/components/client/payment-method-select
 
 interface PricingCardsProps {
     user?: any;
+    initialPackId?: string;
 }
 
 const tiers = [
@@ -79,14 +80,25 @@ const tiers = [
     }
 ];
 
-export function PricingCards({ user }: PricingCardsProps) {
+export function PricingCards({ user, initialPackId }: PricingCardsProps) {
     const [loading, setLoading] = useState<string | null>(null);
     const [selectedPack, setSelectedPack] = useState<any | null>(null);
     const router = useRouter();
 
+    // Auto-select pack if provided in URL (and user is logged in)
+    useState(() => {
+        if (initialPackId && user) {
+            const pack = tiers.find(t => t.id === initialPackId);
+            if (pack) {
+                // Use a small timeout to ensure the component is fully mounted
+                setTimeout(() => setSelectedPack(pack), 500);
+            }
+        }
+    });
+
     const handlePurchase = (tier: any) => {
         if (!user) {
-            router.push('/auth/signup');
+            router.push(`/auth?returnTo=/pricing?pack=${tier.id}`);
             return;
         }
         setSelectedPack(tier);

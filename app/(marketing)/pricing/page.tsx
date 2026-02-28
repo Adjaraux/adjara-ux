@@ -6,8 +6,8 @@ import Script from 'next/script';
 import { createServerClient } from '@supabase/ssr';
 import { cookies } from 'next/headers';
 
-export default async function PricingPage({ searchParams }: { searchParams: Promise<{ reason?: string }> }) {
-    const { reason } = await searchParams;
+export default async function PricingPage({ searchParams }: { searchParams: Promise<{ reason?: string, pack?: string }> }) {
+    const { reason, pack } = await searchParams;
     const cookieStore = await cookies();
 
     // Fetch User for Pre-filling CinetPay
@@ -50,7 +50,7 @@ export default async function PricingPage({ searchParams }: { searchParams: Prom
                 </div>
 
                 <div className="relative z-10">
-                    <PricingCards user={user} />
+                    <PricingCards user={user} initialPackId={pack} />
                 </div>
 
                 <div className="mt-20 pt-12 border-t border-white/10 text-center text-slate-500 text-[10px] font-bold uppercase tracking-widest space-y-2">

@@ -22,6 +22,23 @@ export default function AuthForm() {
     const [fullName, setFullName] = useState('');
     const [error, setError] = useState<string | null>(null);
 
+    // Get returnTo from URL
+    const [returnTo, setReturnTo] = useState<string | null>(null);
+
+    useEffect(() => {
+        const params = new URLSearchParams(window.location.search);
+        const r = params.get('returnTo');
+        if (r) setReturnTo(r);
+    }, []);
+
+    const performRedirect = () => {
+        if (returnTo) {
+            router.push(returnTo);
+        } else {
+            router.push('/welcome');
+        }
+    };
+
     // Identity Check Logic
     const handleEmailSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -65,7 +82,7 @@ export default function AuthForm() {
                 password,
             });
             if (error) throw error;
-            router.push('/welcome');
+            performRedirect();
         } catch (err: any) {
             setError(err.message === 'Invalid login credentials'
                 ? 'Mot de passe incorrect.'
@@ -99,7 +116,7 @@ export default function AuthForm() {
             });
 
             if (data.session) {
-                router.push('/welcome');
+                performRedirect();
                 return;
             }
 
@@ -128,11 +145,11 @@ export default function AuthForm() {
     useEffect(() => {
         const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
             if (event === 'SIGNED_IN' && session) {
-                router.push('/welcome');
+                performRedirect();
             }
         });
         return () => subscription.unsubscribe();
-    }, [router]);
+    }, [router, returnTo]);
 
     // Google Login
     const handleGoogleLogin = async () => {
