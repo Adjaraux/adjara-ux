@@ -203,6 +203,7 @@ export async function updateProjectStatusAction({
         }
     }
 
+    revalidatePath('/dashboard/admin/agency');
     revalidatePath('/dashboard/admin');
     revalidatePath(`/dashboard/client/projects/${projectId}`);
     revalidatePath('/dashboard/client/projects');

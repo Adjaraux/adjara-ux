@@ -21,6 +21,8 @@ import { DownloadReceiptButton } from '@/components/client/download-receipt-butt
 import { formatDistanceToNow } from 'date-fns';
 import { fr } from 'date-fns/locale';
 
+export const dynamic = 'force-dynamic';
+
 export default async function AdminAgencyDashboard() {
     // 1. Fetch ALL Projects via Service Role (Admin sees all)
     const adminClient = getAdminClient();

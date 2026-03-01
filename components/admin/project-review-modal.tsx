@@ -83,6 +83,7 @@ export function ProjectReviewModal({ project, trigger }: ProjectReviewModalProps
             if (res.success) {
                 toast.success("Devis envoyé au client ! (En attente de paiement)");
                 setOpen(false);
+                router.refresh();
             } else {
                 toast.error(res.message);
             }
@@ -108,6 +109,7 @@ export function ProjectReviewModal({ project, trigger }: ProjectReviewModalProps
             if (res.success) {
                 toast.success("Projet refusé.");
                 setOpen(false);
+                router.refresh();
             } else {
                 toast.error(res.message);
             }
@@ -198,9 +200,7 @@ export function ProjectReviewModal({ project, trigger }: ProjectReviewModalProps
 
     return (
         <Dialog open={open} onOpenChange={(v) => { setOpen(v); if (!v) reset(); }}>
-            <DialogTrigger asChild>
-                {trigger || <Button variant="outline">Review</Button>}
-            </DialogTrigger>
+            <DialogTrigger asChild>{trigger || <Button variant="outline">Review</Button>}</DialogTrigger>
             <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
                 <DialogHeader>
                     <div className="flex justify-between items-start pr-8">

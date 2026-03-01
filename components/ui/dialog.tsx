@@ -46,16 +46,29 @@ const DialogTrigger = React.forwardRef<
 >(({ className, asChild, children, onClick, ...props }, ref) => {
     const { onOpenChange } = useDialog()
 
-    // If asChild is true, we should clone the child and add the onClick handler
-    // But simplified for now: if asChild, return child with onClick injected.
-    if (asChild && React.isValidElement(children)) {
-        return React.cloneElement(children as React.ReactElement<any>, {
-            onClick: (e: React.MouseEvent) => {
-                onOpenChange(true)
-                children.props.onClick?.(e)
-            },
-            ...props
-        })
+    // If asChild is true, we find the first valid element child
+    if (asChild) {
+        const child = React.Children.toArray(children).find(React.isValidElement) as React.ReactElement<any>;
+        if (child) {
+            return React.cloneElement(child, {
+                ...props,
+                ...child.props, // Priority to child's own props
+                className: cn(className, child.props.className),
+                onClick: (e: React.MouseEvent) => {
+                    onOpenChange(true);
+                    child.props.onClick?.(e);
+                },
+                ref: (node: any) => {
+                    // Forward the ref to the child if possible
+                    if (typeof ref === 'function') ref(node);
+                    else if (ref) (ref as any).current = node;
+
+                    const childRef = (child as any).ref;
+                    if (typeof childRef === 'function') childRef(node);
+                    else if (childRef) childRef.current = node;
+                }
+            });
+        }
     }
 
     return (
